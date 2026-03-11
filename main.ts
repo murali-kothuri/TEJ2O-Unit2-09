@@ -20,16 +20,19 @@ input.onGesture(Gesture.Shake, function () {
     // if randomNumber was 0
     if (randomNumber == 0) {
         basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Happy)
     }
 
     // if randomNumber was 1
     if (randomNumber == 1) {
         basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.Happy)
     }
 
     // if randomNumber was 2
     if (randomNumber == 2) {
         basic.showIcon(IconNames.Scissors)
+        basic.showIcon(IconNames.Happy)
     }
 
     // hold the icon for 5 seconds
@@ -41,6 +44,8 @@ input.onGesture(Gesture.Shake, function () {
 input.onButtonPressed(Button.A, function() {
     score = score + 1
     basic.showIcon(IconNames.Yes)
+    basic.clearScreen()
+    basic.showIcon(IconNames.Happy)
     basic.clearScreen()
 })
 
